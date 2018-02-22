@@ -1,0 +1,27 @@
+digraph G {
+"base_link" -> "base"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.204 Hz\nMost recent transform: 1518707046.489 ( -0.487 sec old)\nBuffer length: 4.920 sec\n"];
+"link_6" -> "base_link_BH"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.204 Hz\nMost recent transform: 1518707046.489 ( -0.487 sec old)\nBuffer length: 4.920 sec\n"];
+"link_5" -> "link_6"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"camera_link" -> "camera_rgb_frame"[label="Broadcaster: /camera_base_link1\nAverage rate: 10.194 Hz\nMost recent transform: 1518707046.099 ( -0.097 sec old)\nBuffer length: 4.905 sec\n"];
+"base_link" -> "camera_link"[label="Broadcaster: /clustering_18103_1518706679862\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.937 ( 0.065 sec old)\nBuffer length: 4.800 sec\n"];
+"base_link_BH" -> "finger_1_prox_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"finger_1_prox_link" -> "finger_1_med_liink"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"finger_2_prox_link" -> "finger_2_med_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"base_link_BH" -> "finger_2_prox_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"base_link_BH" -> "finger_3_med_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"finger_1_med_liink" -> "finger_1_dist_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"finger_2_med_link" -> "finger_2_dist_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"finger_3_med_link" -> "finger_3_dist_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"base_link" -> "link_1"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"link_1" -> "link_2"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"link_2" -> "link_3"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"link_3" -> "link_4"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"link_4" -> "link_5"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 1518707045.910 ( 0.092 sec old)\nBuffer length: 4.800 sec\n"];
+"camera_rgb_frame" -> "camera_rgb_optical_frame"[label="Broadcaster: /camera_base_link3\nAverage rate: 10.198 Hz\nMost recent transform: 1518707046.022 ( -0.019 sec old)\nBuffer length: 4.805 sec\n"];
+"camera_link" -> "camera_depth_frame"[label="Broadcaster: /camera_base_link\nAverage rate: 10.195 Hz\nMost recent transform: 1518707046.043 ( -0.041 sec old)\nBuffer length: 4.806 sec\n"];
+"camera_depth_frame" -> "camera_depth_optical_frame"[label="Broadcaster: /camera_base_link2\nAverage rate: 10.194 Hz\nMost recent transform: 1518707046.048 ( -0.046 sec old)\nBuffer length: 4.807 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1518707046.002"[ shape=plaintext ] ;
+ }->"base_link";
+}
